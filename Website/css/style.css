@@ -4,17 +4,21 @@
     font-family: sans-serif;    
 }
 
-.banner{
-    width: 100%;
+@font-face {
+    font-family: acherus;
+    src: url(../Fonts/Acherus/Acherus\ Grotesque\ Updated/);
+}
+
+.container{
+    width: 100vw;
     height: 100vh;
     background-color: #ECECEC;
-    background-size: cover;
-    background-position: center;
+    display: grid; 
+    grid-template-rows: 50px 1fr 1fr 50px;
 }
 .navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+    width: 95%;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +36,6 @@
     color: black;
     text-transform: uppercase;
 }
-
 .navbar ul li::after{
     content:'';
     height: 3px; 
@@ -48,11 +51,14 @@
 }
 
 .logo {
-    width: 120px;
+    width: 95px;
     cursor: pointer; 
 }
-.main{
+.header{
+    font-family: acherus;
     background-color: chocolate;
+    height: 5vh;
+    text-align: center;
 }
 .footer{
     background-color: pink;
