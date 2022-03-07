@@ -2,20 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;    
-}
-
-@font-face {
-    font-family: acherus;
-    src: url(../Fonts/Acherus/Acherus\ Grotesque\ Updated/);
+    background-color: #ECECEC;
 }
 
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: #ECECEC;
     display: grid; 
-    grid-template-rows: 50px 1fr 1fr 50px;
+    grid-template-rows: 50px 0.25fr 0.01fr 1fr .25fr;
 }
+
 .navbar{
     width: 95%;
     padding: 5px;
@@ -55,11 +51,36 @@
     cursor: pointer; 
 }
 .header{
-    font-family: acherus;
-    background-color: chocolate;
-    height: 5vh;
+    margin-top: 50px;
+    margin-bottom: 10px;
     text-align: center;
 }
-.footer{
-    background-color: pink;
+.main-body{
+    grid-template-rows: 3fr 1fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+.cover{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 50%;
+    align-content: center;
+}
+.feed{
+    text-align: center;
+}
+
+hr.solid{
+    border: solid 1px #dddd;       
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+}
+
+.footer{   
+     text-align: center;
 }
